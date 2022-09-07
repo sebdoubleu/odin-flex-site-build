@@ -139,7 +139,7 @@ a {
 
 .testimonial-section :last-child {
      margin-left: auto;
-     padding: 10px 0 0 0;
+     padding: 10px 50px 0 0;
      font-weight: bold;
      font-size: 1rem;
 }
@@ -175,4 +175,60 @@ footer {
     padding: 8px 18px;
     border: 2px solid white;
     border-radius: 10px;
+    text-align: center;
+}
+
+@media all and (max-width: 1400px) {
+    .hero-wrapper,
+    .testimonial-section {
+        padding: 1.5rem 5rem 3rem;
+    }
+    .testimonial-section {
+        padding: 3rem 1.5rem 3rem
+    }
+}
+
+@media all and (max-width: 960px) {
+    .hero-wrapper,
+    .testimonial-section {
+        padding: 1.5rem 1.5rem 3rem;
+    }
+    .card {
+        max-width: 90vw;
+    }
+    .card p {
+        max-width: 80vw;
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .testimonial-section {
+        padding: 4rem 1.5rem 4rem
+    }
+    .testimonial-section :last-child {
+        margin: 0;
+        text-align: center;
+   }
+   .hero-content h1 {
+        font-size: 2rem;
+   }
+   .hero-content p {
+    padding: 20px 0;
+   }
+}
+@media all and (max-width: 550px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
+    }
+    .hero-left,
+    .hero-right,
+    .placeholder-img {
+        max-width: 80vw;
+    }
+    .hero-content h1 {
+         font-size: 2.75rem;
+    }
 }
